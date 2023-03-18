@@ -1,0 +1,107 @@
+@font-face {
+  font-family: 'product-sans-bold';
+  src: url('fonts/Product-Sans-Bold.woff') format('woff'),
+       url('fonts/Product-Sans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'product-sans';
+  src: url('fonts/Product-Sans-Regular.woff') format('woff'),
+       url('fonts/Product-Sans-Regular.ttf') format('truetype');
+}
+
+:root {
+  background: radial-gradient(circle at top left,transparent 8%, #5B9BD5 10% ,#5B9BD5 15% , transparent 16%) , radial-gradient(circle at bottom left,transparent 9%, #5B9BD5 10% ,#5B9BD5 15% , transparent 16%), radial-gradient(circle at top right ,transparent 9%, #5B9BD5 10% ,#5B9BD5 15% , transparent 16%) , radial-gradient(circle at bottom right,transparent 9%, #5B9BD5 10% ,#5B9BD5 15% , transparent 16%),radial-gradient(circle, transparent 25%, #ffffff  26%),linear-gradient(0deg, transparent 44%, #5B9BD5 45%, #5B9BD5 55%, transparent 56%), linear-gradient(90deg, transparent 44%, #5B9BD5 45%, #5B9BD5 55%, transparent 56%);
+  background-size: 3em 3em;
+}
+
+
+div span {
+  color: #ED7D31;
+}
+
+.mtitle {
+  font-family: "product-sans-bold", sans-serif;
+  font-size: 60px;
+  color: #5B9BD5;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  margin-top: 70px;
+  gap: 15px;
+}
+
+#timer-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.85);
+  z-index: -1;
+}
+
+#timer-container {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  height: 100px;
+  margin-top: 60px;
+}
+
+#timer {
+  font-family: "product-sans", sans-serif;
+  color: white;
+  background-color: #262626;
+  font-size: 40px;
+  border-radius: 20px;
+  width: 500px;
+  height: 60px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+#button-container {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  margin-top: 20px;
+}
+
+#start, #reset {
+  font-family: "product-sans", sans-serif;
+  color: white;
+  font-size: 30px;
+  border-radius: 20px;
+  width: 200px;
+  height: 55px;
+  outline: none;
+  border: none;
+  transition: background-color 0.15s ease-in-out;
+}
+
+#start{
+  background-color: #5B9BD5;
+  margin-right: 30px;
+}
+
+#reset {
+  background-color: #ED7D31;
+}
+
+#reset:hover{
+  background-color: #EE3030;
+}
+
+ #start:hover{
+  background-color: #4472C4;
+}
+
+#start:active {
+  background-color: #5B9BD5;
+}
+
+#reset:active {
+  background-color: #ED7D31;
+}
